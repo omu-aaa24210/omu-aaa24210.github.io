@@ -4,6 +4,12 @@
     <title>おすすめの旅行先</title>
   </head>
   <body>
+    <h2>BMI指標計算</h2>
+    <form oninput="bmi.value = Math.round(Number(weight.value) / Math.pow(Number(height.value)/100, 2) * 10) / 10">
+        <p><label>体重(kg)：<input name="weight" type="number" step="any"></label></p>
+        <p><label>身長(cm)：<input name="height" type="number" step="any"></label></p>
+        <p><label>BMI：<output name="bmi"></output></label></p>
+    </form>
     <img src="https://images.unsplash.com/photo-1684655532308-dfd0e3e72221?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"width="300" height="200">
     <P>旅行先にオススメ！香川県</P>
     <P>香川県は小さな県ながら、魅力がぎゅっと詰まった旅行先です。</P>
